@@ -1,0 +1,15 @@
+.publicidad{ 
+    display: flex;
+    .redes, .youtube{
+        img{
+            opacity: 80%;
+            
+        }
+        img:hover{
+            opacity: 100%;
+        }
+    }
+}
+#contacto{
+    height: 100px;
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------------------HEAD IN------------------------------------------->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords"  content="Vehiculos nuevos">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="scss/style.css"> <!-----HAGO LINK CON EL ESTILO------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="Imagenes/Logos/favicon.ico" type="image/x-icon">
+        <title>Vehiculos Online | Vehiculos Nuevos</title> <!-----TITULO EN LA PESTAÑA------>
+
+    </head>
+<!------------------------------------------HEAD OUT------------------------------------------->
+<!------------------------------------------BODY IN-------------------------------------------->
+    <body>
+
+        <header class="header__gradient">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img src="Imagenes/Logos/LOGO.png" width= "100px" alt="LOGO" class="logo">
+                        <h1 title>Vehiculos Online</h1>
+                    </div>
+                    <div class="col login">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Login">
+                            <img src="/Imagenes/Logos/login.png" alt="Login" width="50%">
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">¡Inicia sesión en Vehiculos Online!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Correo Electrónico:</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1">
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+                                       </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn " data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn btn-dark" data-bs-toggle="modal" data-bs-target="#Register">
+                                        Registrarme
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">¡Registrate en Vehiculos Online!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-md-6">
+                                          <label for="validationCustom01" class="form-label">Nombre:</label>
+                                          <input type="text" class="form-control" id="validationCustom01"required>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="validationCustom02" class="form-label">Apellido:</label>
+                                          <input type="text" class="form-control" id="validationCustom02"required>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <label for="validationCustomUsername" class="form-label">Correo Electrónico:</label>
+                                          <div class="input-group has-validation">
+                                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="validationCustom03" class="form-label">Provincia:</label>
+                                          <input type="text" class="form-control" id="validationCustom03" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="validationCustom04" class="form-label">Localidad:</label>
+                                          <input type="text" class="form-control" id="validationCustom04" required>
+                                        </div>
+                                          <button class="btn btn-dark" type="submit">Registrarme</button>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>          
+            <nav> <!-----Barra de navegación------>
+                
+                <ul>
+                    <li><a class="inicio" href="index.html">Inicio</a></li>
+                    <li><a class="nuevos" href="newveh.html">Vehículos Nuevos</a></li>
+                    <li><a class="usados" href="usedveh.html">Vehículos Usados</a></li>
+                    <li><a class="publicar" href="carpublish.html">Publicar Mi Auto</a></li>
+                    <li><a class="sedes" href="places.html">Nuestas Sedes</a></li>
+                    <li><a class="contacto" href="#contacto">Contacto</a></li>
+                </ul>
+
+            </nav><!-----Barra de navegación------>
+
+        </header>
+<!------------------------------------------MAIN IN-------------------------------------------->
+       
+        <main>
+            
+            <section id="filtro"> <!-----Filtro de busqueda----->
+                <form action="#">
+                        <legend class="formTitle">Busca tu vehiculo!</legend>
+                        <div>
+                            <label for="marca">Marcas:</label>
+                            <select name="marca" id="">
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Fiat">Fiat</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Jeep">Jeep</option>
+                                <option value="Kia">Kia</option>
+                                <option value="Merc">Mercedes Benz</option>
+                                <option value="Ren">Renault</option>
+                                <option value="Peu">Peugeot</option>
+                                <option value="Toyo">Toyota</option>
+                                <option value="Volk">Volkswagen</option>
+                            </select>
+
+                            <label for="modelo">Modelo</label>
+                            <select name="modelo" id="">
+                                <option value="modelo">Modelo</option>
+                                <!-- NO SE AGREGAN MODELOS POR EL MOMENTO POR LA GRAN CANTIDAD QUE HABRIA QUE AGREGAR -->
+                            </select>
+                        
+                            <label for="kilometros">Kilometraje:</label>
+                            <input class="kmInit" type="kilometros" name="kilometros" placeholder="Desde"> a
+                            <input class="kmEnd" type="kilometros" name="kilometros" placeholder="Hasta">
+                        
+                            <label for="condicion">Condicion</label>
+                            <input type="radio" name="condicion" id="" value="usado">Usado
+                            <input type="radio" name="condicion" id="" value="nuevo">Nuevo
+                        
+                            <label for="ubicacion">Ubicación</label>
+                            <select name="ubicacion" id="">
+                                <option value="caba">Capital Federal</option>
+                                <option value="bsas">Buenos Aires</option>
+                                <option value="men">Mendoza</option>
+                                <option value="chub">Chubut</option>
+                                <option value="mis">Misiones</option>
+                                <option value="cha">Chaco</option>
+                                <option value="juj">Jujuy</option>
+                                <option value="stc">Santa Cruz</option>
+                                <option value="nqn">Neuquén</option>
+                                <option value="lar">La Rioja</option>
+                                <option value="sal">Salta</option>
+                                <option value="cor">Cordoba</option>
+                                <option value="rin">Rio Negro</option>
+                            </select>
+
+                            <label for="precio">Precio:</label>
+                            <input class="startPrice" type="precio" name="precio" placeholder="Desde"> a
+                            <input class="endPrice" type="precio" name="precio" placeholder="Hasta">
+
+                            <input type="submit" value="Buscar">
+                        </div>
+                </form>
+            </section> <!-----Filtro de busqueda----->
+            <h2>Vehiculos 0km:</h2>
+            <section class="autosNuevos">
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New1.jpg" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Fiat</li>
+                        <li>Cronos</li>
+                        <li class="price">$2100000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New2.jfif" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Volkswagen</li>
+                        <li>Tiguan</li>
+                        <li class="price">$3500000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New3.jfif" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Fiat</li>
+                        <li>Argo</li>
+                        <li class="price">$1800000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New4.jpg" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Ford</li>
+                        <li>EcoSport</li>
+                        <li class="price">$2800000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New5.jpg" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Volkswagen</li>
+                        <li>Gol</li>
+                        <li class="price">$3000000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+            </section>
+            <br>
+            <br>
+            <section class="autosNuevos">
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New1.jpg" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Fiat</li>
+                        <li>Cronos</li>
+                        <li class="price">$2100000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New2.jfif" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Volkswagen</li>
+                        <li>Tiguan</li>
+                        <li class="price">$3500000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New3.jfif" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Fiat</li>
+                        <li>Argo</li>
+                        <li class="price">$1800000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New4.jpg" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Ford</li>
+                        <li>EcoSport</li>
+                        <li class="price">$2800000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+                <section class="car">
+                    <img class="photo" src="Imagenes/Vehiculos Nuevos/New5.jpg" width= "250px" height="200px" alt="Nuevo 1">
+                    <ul class="info">
+                        <li>Volkswagen</li>
+                        <li>Gol</li>
+                        <li class="price">$3000000</li>
+                    </ul>
+                    <a class="btn btn-dark" href="#" role="button">Ver Mas</a>    
+                </section>
+            </section>
+            <br>
+            <br>
+        </main>
+
+<!------------------------------------------MAIN OUT-------------------------------------------->
+<!------------------------------------------FOOTER IN------------------------------------------->
+        <footer>
+
+            <section class="publicidad">
+                <div class="redes">
+                    <h2>Buscanos en:</h2>
+                    <img src="Imagenes/Logos/instagram.png" width= "4%" alt="Instagram">
+                    <img src="Imagenes/Logos/facebook.png" width= "4%" alt="Facebook">
+                </div>
+                <div class="youtube">
+                    <h2>Nuestras Reseñas:</h2>
+                    <img src="Imagenes/Logos/youtube.png" width= "20%" alt="Youtube">
+                </div>              
+            </section>
+            <h2>Contactanos!</h2>
+            <section id="contacto">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-3">
+                      <label for="validationCustom01" class="form-label">Nombre/s</label>
+                      <input type="text" class="form-control" id="validationCustom01" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom02" class="form-label">Apellido/s</label>
+                      <input type="text" class="form-control" id="validationCustom02"  required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom03" class="form-label">Provincia</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresar una provincia correcta.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom04" class="form-label">Motivo</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elegir...</option>
+                        <option>Compras</option>
+                        <option>Ventas</option>
+                        <option>Cobros</option>
+                      </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Comentario</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                    <div class="col-md-12">
+                      <button class="btn btn-dark" type="submit">Enviar</button>
+                    </div>
+                  </form>
+                  <br>
+            </section>
+            <br>
+
+        </footer>
+<!------------------------------------------FOOTER OUT ------------------------------------------->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.js"></script>
+    </body>
+</html>

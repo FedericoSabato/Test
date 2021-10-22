@@ -1,0 +1,43 @@
+.header__gradient{
+    background-image: linear-gradient(to left, rgb(128, 128, 128), white );
+}
+.header__logo{
+    display: inline-block;
+}
+.login{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+nav{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: $colorblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ul{
+        li{
+            font-family: 'Bebas Neue', cursive;
+            display: inline-block;
+            :hover{
+                background-color:$colorblue;
+            }
+        }
+    }
+    .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
+        text-decoration: none;
+        margin: 1%;
+        font-size:200%;
+        color: $colorblue;
+    }
+    .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
+        text-decoration: none;
+        margin: 1%;
+        font-size:200%;
+        color: gray;
+    }
+    
+}

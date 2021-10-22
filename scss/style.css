@@ -1,0 +1,421 @@
+.boot_carCarousel {
+  margin: 5%;
+  width: 55%;
+}
+
+.col h2 {
+  margin-top: 2%;
+}
+
+.col .desc1 {
+  font-family: 'Lato', sans-serif;
+  color: #000064;
+}
+
+.col .desc1 .price {
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+.col .desc2 {
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+.col .desc2 .price {
+  color: #000064;
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+.autosNuevos, .autosUsados, .nuevosIngresos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.autosNuevos .car, .autosUsados .car, .nuevosIngresos .car {
+  background-color: lightgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 0.5fr;
+      grid-template-rows: 2fr 0.5fr;
+  gap: 5px;
+      grid-template-areas: "photo" "info";
+}
+
+.autosNuevos .car .photo, .autosUsados .car .photo, .nuevosIngresos .car .photo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: photo;
+}
+
+.autosNuevos .car .info, .autosUsados .car .info, .nuevosIngresos .car .info {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: info;
+  font-family: 'Lato', sans-serif;
+  list-style-type: none;
+  font-size: large;
+}
+
+.autosNuevos .car .info .price, .autosUsados .car .info .price, .nuevosIngresos .car .info .price {
+  color: #000064;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.autosNuevos .car:hover, .autosUsados .car:hover, .nuevosIngresos .car:hover {
+  border: #000064 5px solid;
+  border-radius: 3%;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+.publish {
+  font-family: 'Lato', sans-serif;
+  color: #000064;
+}
+
+#filtro {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  z-index: 2;
+}
+
+#filtro form {
+  font-family: 'Lato', sans-serif;
+  color: gray;
+  background-color: #000064;
+  border-radius: 15px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#filtro form .formTitle {
+  color: gray;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 150%;
+  margin-left: 1%;
+}
+
+#filtro form label {
+  margin: 1%;
+}
+
+#filtro form .kmInit, #filtro form .kmEnd, #filtro form .startPrice, #filtro form .endPrice {
+  width: 5%;
+}
+
+.publicidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.publicidad .redes img, .publicidad .youtube img {
+  opacity: 80%;
+}
+
+.publicidad .redes img:hover, .publicidad .youtube img:hover {
+  opacity: 100%;
+}
+
+#contacto {
+  height: 100px;
+}
+
+.header__gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(gray), to(white));
+  background-image: linear-gradient(to left, gray, white);
+}
+
+.header__logo {
+  display: inline-block;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: #000064;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  font-family: 'Bebas Neue', cursive;
+  display: inline-block;
+}
+
+nav ul li :hover {
+  background-color: #000064;
+}
+
+nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
+  text-decoration: none;
+  margin: 1%;
+  font-size: 200%;
+  color: #000064;
+}
+
+nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
+  text-decoration: none;
+  margin: 1%;
+  font-size: 200%;
+  color: gray;
+}
+
+.placesDirec {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: #000064;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  margin: 1%;
+}
+
+h1 {
+  display: inline-block;
+  color: #000064;
+  font-size: 400%;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+  color: #000064;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h3 {
+  color: #000064;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 150%;
+}
+
+@media (min-width: 480px) {
+  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 100%;
+    color: #000064;
+  }
+  nav .inicio :hover, nav .nuevos :hover, nav .usados :hover, nav .publicar :hover, nav .sedes :hover, nav .contacto :hover {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 100%;
+    color: gray;
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .nuestrasSedes {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    height: 850px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr (1fr)[5];
+        grid-template-rows: 1fr repeat(5, 1fr);
+    gap: 1px;
+        grid-template-areas: "map" "sede1" "sede2" "sede3" "sede4"  "sede5";
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: map;
+  }
+  .sede1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: sede1;
+  }
+  .sede2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: sede2;
+  }
+  .sede3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: sede3;
+  }
+  .sede4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: sede4;
+  }
+  .sede5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: sede5;
+  }
+}
+
+@media (min-width: 768px) {
+  .autosNuevos, .autosUsados, .nuevosIngresos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 150%;
+    color: #000064;
+  }
+  nav .inicio :hover, nav .nuevos :hover, nav .usados :hover, nav .publicar :hover, nav .sedes :hover, nav .contacto :hover {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 150%;
+    color: gray;
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .nuestrasSedes {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    height: 600px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+        grid-template-areas: "map sede1" "map sede2" "map sede3" "map sede4" "map sede5";
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .sede1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: sede1;
+  }
+  .sede2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: sede2;
+  }
+  .sede3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: sede3;
+  }
+  .sede4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: sede4;
+  }
+  .sede5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: sede5;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 200%;
+    color: #000064;
+  }
+  nav .inicio :hover, nav .nuevos :hover, nav .usados :hover, nav .publicar :hover, nav .sedes :hover, nav .contacto :hover {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 200%;
+    color: gray;
+  }
+  .map {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
