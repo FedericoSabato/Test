@@ -20,7 +20,7 @@ body{
 h1{
     display: inline-block;
     color: $colorblue;
-    font-size:400%;
+    font-size:200%;
     font-family: 'Bebas Neue', cursive;
 }
 h2{
@@ -33,28 +33,70 @@ h3{
     font-family: 'Bebas Neue', cursive;
     font-size: 150%;
 }
-@media (min-width:480px){
+.map{
+    grid-area: map;
+    width: 100%;
+}
+.nuestrasSedes{
+    align-items: center;
+    width: 70%;
+    height: 850px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(5,1fr);
+    gap: 1px;
+    grid-template-areas: 
+    "map"
+    "sede1"
+    "sede2"
+    "sede3"
+    "sede4" 
+    "sede5";
+}
+.map{
+    grid-area: map;
+}
+@for $i from 1 through 5{
 
+    .sede#{($i)}{
+        grid-area:sede#{($i)};
+    }
+}
+nav{
+    .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
+        display: flexbox;
+        text-decoration: none;
+        margin: 1%;
+        font-size:100%;
+        color:$colorblue;
+    }
+    .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
+        text-decoration: none;
+            margin: 1%;
+            font-size:100%;
+            color: gray;
+    }
+}
+@media (min-width:600px){
     h1{
         display: inline-block;
         color: $colorblue;
-        font-size:200%;
+        font-size:400%;
         font-family: 'Bebas Neue', cursive;
     }
     nav{
         .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
             text-decoration: none;
             margin: 1%;
-            font-size:50%;
+            font-size:200%;
             color:$colorblue;
-            :hover{
-                text-decoration: none;
-                margin: 1%;
-                font-size:100%;
-                color: gray;
-            }
         }
-
+        .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
+            text-decoration: none;
+                margin: 1%;
+                font-size:200%;
+                color: gray;
+        }
     }
     .map{
         grid-area: map;
