@@ -64,7 +64,6 @@ h3{
 }
 nav{
     .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
-        display: flexbox;
         text-decoration: none;
         margin: 1%;
         font-size:100%;
@@ -143,12 +142,13 @@ nav{
             margin: 1%;
             font-size:150%;
             color: $colorblue;
-            :hover{
-                text-decoration: none;
+            
+        }
+        .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
+            text-decoration: none;
                 margin: 1%;
-                font-size:150%;
+                font-size:200%;
                 color: gray;
-            }
         }
     }
     .map{
