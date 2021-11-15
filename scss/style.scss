@@ -54,71 +54,6 @@ h3{
         grid-area:sede#{($i)};
     }
 }
-nav{
-    .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
-        text-decoration: none;
-        margin: 1%;
-        font-size:100%;
-        color:$colorblue;
-    }
-    .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
-        text-decoration: none;
-            margin: 1%;
-            font-size:100%;
-            color: gray;
-    }
-}
-@media (min-width:600px){
-    h1{
-        display: inline-block;
-        color: $colorblue;
-        font-size:400%;
-        font-family: 'Bebas Neue', cursive;
-    }
-    nav{
-        .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
-            text-decoration: none;
-            margin: 1%;
-            font-size:200%;
-            color:$colorblue;
-        }
-        .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
-            text-decoration: none;
-                margin: 1%;
-                font-size:200%;
-                color: gray;
-        }
-    }
-    .map{
-        grid-area: map;
-        width: 100%;
-    }
-    .nuestrasSedes{
-        align-items: center;
-        width: 70%;
-        height: 850px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr repeat(5,1fr);
-        gap: 1px;
-        grid-template-areas: 
-        "map"
-        "sede1"
-        "sede2"
-        "sede3"
-        "sede4" 
-        "sede5";
-    }
-    .map{
-        grid-area: map;
-    }
-    @for $i from 1 through 5{
-
-        .sede#{($i)}{
-            grid-area:sede#{($i)};
-        }
-    }
-}
 //----------------------------------------------------------------------------------------
 //Descripcion del vehiculo
 //----------------------------------------------------------------------------------------
@@ -213,10 +148,11 @@ nav{
         border-radius: 15px;
         margin-top: 1%;
         margin-bottom: 1%;
+        font-size: 100%;
         .formTitle{
             color: gray;
             font-family: 'Bebas Neue', cursive;
-            font-size:150%;
+            font-size:100%;
             margin-left: 1%;
         }
         label{
@@ -264,15 +200,14 @@ nav{
     text-align: center;
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
-    color: $colorblue;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    color: $colorblue; 
     ul{
         li{
             font-family: 'Bebas Neue', cursive;
-            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
             :hover{
                 background-color:$colorblue;
             }
@@ -281,13 +216,13 @@ nav{
     .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
         text-decoration: none;
         margin: 1%;
-        font-size:200%;
+        font-size:150%;
         color: $colorblue;
     }
     .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
         text-decoration: none;
         margin: 1%;
-        font-size:200%;
+        font-size:150%;
         color: gray;
     }
     
@@ -307,8 +242,24 @@ p{
 //----------------------------------------------------------------------------------------
 //Media Queries
 //----------------------------------------------------------------------------------------
-@media (min-width:768px){
-
+//Escritorio
+@media (min-width: 1200px) { 
+    h1{
+        font-size: 400%;
+    }
+    nav{
+        ul{
+            li{
+                display: inline-block;
+            }
+        }
+        .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
+            font-size:200%;
+        }
+        .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
+            font-size:200%;
+        }
+    }
     .autosNuevos,.autosUsados,.nuevosIngresos{
         display: flex;
         flex-direction: row;
@@ -316,67 +267,21 @@ p{
         align-items: center;
         justify-content: space-between;
     }
-    nav{
-        .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
-            text-decoration: none;
-            margin: 1%;
-            font-size:150%;
-            color: $colorblue;
-            
-        }
-        .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
-            text-decoration: none;
-                margin: 1%;
-                font-size:200%;
-                color: gray;
-        }
-    }
-    .map{
-        grid-area: map;
-        width: 100%;
-    }
-    .nuestrasSedes{
-        align-items: center;
-        width: 70%;
-        height: 600px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows:repeat(5,1fr);
-        gap: 10px;
-        grid-template-areas: 
-        "map sede1"
-        "map sede2"
-        "map sede3"
-        "map sede4"
-        "map sede5";
-    }
-    .map{
-        grid-area: map;
-        width: 100%;
-    }
-    @for $i from 1 through 5{
-
-        .sede#{($i)}{
-            grid-area:sede#{($i)};
-        }
-    }
 }
-@media (min-width:1200px){
+//Tablets
+@media (min-width: 768px) and (max-width: 1200px) { 
     nav{
-        .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
-            text-decoration: none;
-            margin: 1%;
-            font-size:200%;
-            color: $colorblue;
-            :hover{
-                text-decoration: none;
-                margin: 1%;
-                font-size:200%;
-                color: gray;
+        ul{
+            li{
+                display: inline-block;
             }
         }
     }
-    .map{
-        width: 90%;
+    .autosNuevos,.autosUsados,.nuevosIngresos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
 }

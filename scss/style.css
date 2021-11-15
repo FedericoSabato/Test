@@ -87,92 +87,6 @@ h3 {
   grid-area: sede5;
 }
 
-nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
-  text-decoration: none;
-  margin: 1%;
-  font-size: 100%;
-  color: #000064;
-}
-
-nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
-  text-decoration: none;
-  margin: 1%;
-  font-size: 100%;
-  color: gray;
-}
-
-@media (min-width: 600px) {
-  h1 {
-    display: inline-block;
-    color: #000064;
-    font-size: 400%;
-    font-family: 'Bebas Neue', cursive;
-  }
-  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 200%;
-    color: #000064;
-  }
-  nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 200%;
-    color: gray;
-  }
-  .map {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: map;
-    width: 100%;
-  }
-  .nuestrasSedes {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 70%;
-    height: 850px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr (1fr)[5];
-        grid-template-rows: 1fr repeat(5, 1fr);
-    gap: 1px;
-        grid-template-areas: "map" "sede1" "sede2" "sede3" "sede4"  "sede5";
-  }
-  .map {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: map;
-  }
-  .sede1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: sede1;
-  }
-  .sede2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: sede2;
-  }
-  .sede3 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: sede3;
-  }
-  .sede4 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    grid-area: sede4;
-  }
-  .sede5 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    grid-area: sede5;
-  }
-}
-
 .boot_carCarousel {
   margin: 5%;
   width: 55%;
@@ -284,12 +198,13 @@ nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, na
   border-radius: 15px;
   margin-top: 1%;
   margin-bottom: 1%;
+  font-size: 100%;
 }
 
 #filtro form .formTitle {
   color: gray;
   font-family: 'Bebas Neue', cursive;
-  font-size: 150%;
+  font-size: 100%;
   margin-left: 1%;
 }
 
@@ -345,6 +260,10 @@ nav {
   text-decoration: none;
   font-family: 'Bebas Neue', cursive;
   color: #000064;
+}
+
+nav ul li {
+  font-family: 'Bebas Neue', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,11 +279,6 @@ nav {
           align-items: center;
 }
 
-nav ul li {
-  font-family: 'Bebas Neue', cursive;
-  display: inline-block;
-}
-
 nav ul li :hover {
   background-color: #000064;
 }
@@ -372,14 +286,14 @@ nav ul li :hover {
 nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
   text-decoration: none;
   margin: 1%;
-  font-size: 200%;
+  font-size: 150%;
   color: #000064;
 }
 
 nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
   text-decoration: none;
   margin: 1%;
-  font-size: 200%;
+  font-size: 150%;
   color: gray;
 }
 
@@ -394,7 +308,19 @@ p {
   color: black;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 400%;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
+    font-size: 200%;
+  }
+  nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
+    font-size: 200%;
+  }
   .autosNuevos, .autosUsados, .nuevosIngresos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -412,89 +338,28 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 150%;
-    color: #000064;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  nav ul li {
+    display: inline-block;
   }
-  nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 200%;
-    color: gray;
-  }
-  .map {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 5;
-    -ms-grid-column: 1;
-    grid-area: map;
-    width: 100%;
-  }
-  .nuestrasSedes {
+  .autosNuevos, .autosUsados, .nuevosIngresos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 70%;
-    height: 600px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
-    -ms-grid-rows: (1fr)[5];
-        grid-template-rows: repeat(5, 1fr);
-    gap: 10px;
-        grid-template-areas: "map sede1" "map sede2" "map sede3" "map sede4" "map sede5";
-  }
-  .map {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 5;
-    -ms-grid-column: 1;
-    grid-area: map;
-    width: 100%;
-  }
-  .sede1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: sede1;
-  }
-  .sede2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: sede2;
-  }
-  .sede3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: sede3;
-  }
-  .sede4 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    grid-area: sede4;
-  }
-  .sede5 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    grid-area: sede5;
-  }
-}
-
-@media (min-width: 1200px) {
-  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 200%;
-    color: #000064;
-  }
-  nav .inicio :hover, nav .nuevos :hover, nav .usados :hover, nav .publicar :hover, nav .sedes :hover, nav .contacto :hover {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 200%;
-    color: gray;
-  }
-  .map {
-    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */
