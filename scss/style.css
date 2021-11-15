@@ -1,3 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  margin: 1%;
+}
+
+h1 {
+  display: inline-block;
+  color: #000064;
+  font-size: 200%;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+  color: #000064;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h3 {
+  color: #000064;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 150%;
+}
+
+.map {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: map;
+  width: 100%;
+}
+
+.nuestrasSedes {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 850px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr (1fr)[5];
+      grid-template-rows: 1fr repeat(5, 1fr);
+  gap: 1px;
+      grid-template-areas: "map" "sede1" "sede2" "sede3" "sede4"  "sede5";
+}
+
+.map {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: map;
+}
+
+.sede1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sede1;
+}
+
+.sede2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: sede2;
+}
+
+.sede3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sede3;
+}
+
+.sede4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: sede4;
+}
+
+.sede5 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: sede5;
+}
+
+nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
+  text-decoration: none;
+  margin: 1%;
+  font-size: 100%;
+  color: #000064;
+}
+
+nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
+  text-decoration: none;
+  margin: 1%;
+  font-size: 100%;
+  color: gray;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    display: inline-block;
+    color: #000064;
+    font-size: 400%;
+    font-family: 'Bebas Neue', cursive;
+  }
+  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 200%;
+    color: #000064;
+  }
+  nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
+    text-decoration: none;
+    margin: 1%;
+    font-size: 200%;
+    color: gray;
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .nuestrasSedes {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    height: 850px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr (1fr)[5];
+        grid-template-rows: 1fr repeat(5, 1fr);
+    gap: 1px;
+        grid-template-areas: "map" "sede1" "sede2" "sede3" "sede4"  "sede5";
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: map;
+  }
+  .sede1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: sede1;
+  }
+  .sede2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: sede2;
+  }
+  .sede3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: sede3;
+  }
+  .sede4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: sede4;
+  }
+  .sede5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: sede5;
+  }
+}
+
 .boot_carCarousel {
   margin: 5%;
   width: 55%;
@@ -217,181 +392,6 @@ nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, na
 p {
   font-family: 'Lato', sans-serif;
   color: black;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: lightgray;
-  margin: 1%;
-}
-
-h1 {
-  display: inline-block;
-  color: #000064;
-  font-size: 200%;
-  font-family: 'Bebas Neue', cursive;
-}
-
-h2 {
-  color: #000064;
-  font-family: 'Bebas Neue', cursive;
-}
-
-h3 {
-  color: #000064;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 150%;
-}
-
-.map {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: map;
-  width: 100%;
-}
-
-.nuestrasSedes {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 70%;
-  height: 850px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr (1fr)[5];
-      grid-template-rows: 1fr repeat(5, 1fr);
-  gap: 1px;
-      grid-template-areas: "map" "sede1" "sede2" "sede3" "sede4"  "sede5";
-}
-
-.map {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: map;
-}
-
-.sede1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: sede1;
-}
-
-.sede2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: sede2;
-}
-
-.sede3 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: sede3;
-}
-
-.sede4 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: sede4;
-}
-
-.sede5 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: sede5;
-}
-
-nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
-  text-decoration: none;
-  margin: 1%;
-  font-size: 100%;
-  color: #000064;
-}
-
-nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
-  text-decoration: none;
-  margin: 1%;
-  font-size: 100%;
-  color: gray;
-}
-
-@media (min-width: 600px) {
-  h1 {
-    display: inline-block;
-    color: #000064;
-    font-size: 400%;
-    font-family: 'Bebas Neue', cursive;
-  }
-  nav .inicio, nav .nuevos, nav .usados, nav .publicar, nav .sedes, nav .contacto {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 200%;
-    color: #000064;
-  }
-  nav .inicio:hover, nav .nuevos:hover, nav .usados:hover, nav .publicar:hover, nav .sedes:hover, nav .contacto:hover {
-    text-decoration: none;
-    margin: 1%;
-    font-size: 200%;
-    color: gray;
-  }
-  .map {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: map;
-    width: 100%;
-  }
-  .nuestrasSedes {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 70%;
-    height: 850px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr (1fr)[5];
-        grid-template-rows: 1fr repeat(5, 1fr);
-    gap: 1px;
-        grid-template-areas: "map" "sede1" "sede2" "sede3" "sede4"  "sede5";
-  }
-  .map {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: map;
-  }
-  .sede1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: sede1;
-  }
-  .sede2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: sede2;
-  }
-  .sede3 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: sede3;
-  }
-  .sede4 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    grid-area: sede4;
-  }
-  .sede5 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    grid-area: sede5;
-  }
 }
 
 @media (min-width: 768px) {

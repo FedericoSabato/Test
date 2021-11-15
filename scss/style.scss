@@ -1,11 +1,3 @@
-@import "cardesc";
-@import "cargrid";
-@import "carpublish";
-@import "filter";
-@import "footer";
-@import "header";
-@import "places";
-
 $colorblue:rgb(0, 0, 100);
 
 *{
@@ -127,6 +119,194 @@ nav{
         }
     }
 }
+//----------------------------------------------------------------------------------------
+//Descripcion del vehiculo
+//----------------------------------------------------------------------------------------
+.boot_carCarousel{
+    margin: 5%;
+    width: 55%;
+}
+.col{
+    h2{
+        margin-top: 2%;
+    }
+    .desc1{
+        font-family: 'Lato', sans-serif;
+        color: $colorblue;
+        .price{
+            font-size: 150%;
+            font-weight: bolder;
+        }
+    }
+    .desc2{
+        font-family: 'Lato', sans-serif;
+        color: black;
+        .price{
+            color:$colorblue;
+            font-size: 150%;
+            font-weight: bolder;
+        }
+    }    
+}
+//----------------------------------------------------------------------------------------
+//Cuadricula de vehiculos
+//----------------------------------------------------------------------------------------
+.autosNuevos,.autosUsados,.nuevosIngresos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+
+    .car{
+        background-color: lightgray;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 0.5fr;
+        gap: 5px;
+        grid-template-areas: 
+        "photo"
+        "info";
+        .photo{
+            grid-area: photo;
+        }
+        .info{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            grid-area: info;
+            font-family: 'Lato', sans-serif;
+            list-style-type:none;
+            font-size: large;
+            .price{
+                color:$colorblue;
+                font-size: 120%;
+                font-weight: bolder;
+            }
+        }
+    }
+    
+    .car:hover{
+        border:$colorblue 5px solid;
+        border-radius: 3%;
+        transform: scale(1.1,1.1);
+        transition: transform 0.6s;
+    }
+}
+//----------------------------------------------------------------------------------------
+//Publicar vehiculo
+//----------------------------------------------------------------------------------------
+.publish{
+    font-family: 'Lato', sans-serif;
+    color: $colorblue;
+}
+//----------------------------------------------------------------------------------------
+//Filtro
+//----------------------------------------------------------------------------------------
+#filtro{
+    position: sticky;
+    top:20px;  
+    z-index:2;
+    form{
+        font-family: 'Lato', sans-serif;
+        color: gray;
+        background-color: $colorblue;
+        border-radius: 15px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        .formTitle{
+            color: gray;
+            font-family: 'Bebas Neue', cursive;
+            font-size:150%;
+            margin-left: 1%;
+        }
+        label{
+            margin:1%; 
+        }
+        .kmInit,.kmEnd,.startPrice,.endPrice{
+            width: 5%;
+        }
+    }
+    
+}
+//----------------------------------------------------------------------------------------
+//Footer
+//----------------------------------------------------------------------------------------
+.publicidad{ 
+    display: flex;
+    .redes, .youtube{
+        img{
+            opacity: 80%;
+            
+        }
+        img:hover{
+            opacity: 100%;
+        }
+    }
+}
+#contacto{
+    height: 100px;
+}
+//----------------------------------------------------------------------------------------
+//Header
+//----------------------------------------------------------------------------------------
+.header__gradient{
+    background-image: linear-gradient(to left, rgb(128, 128, 128), white );
+}
+.header__logo{
+    display: inline-block;
+}
+.login{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+nav{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: $colorblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ul{
+        li{
+            font-family: 'Bebas Neue', cursive;
+            display: inline-block;
+            :hover{
+                background-color:$colorblue;
+            }
+        }
+    }
+    .inicio,.nuevos,.usados,.publicar,.sedes,.contacto{
+        text-decoration: none;
+        margin: 1%;
+        font-size:200%;
+        color: $colorblue;
+    }
+    .inicio:hover,.nuevos:hover,.usados:hover,.publicar:hover,.sedes:hover,.contacto:hover{
+        text-decoration: none;
+        margin: 1%;
+        font-size:200%;
+        color: gray;
+    }
+    
+}
+//----------------------------------------------------------------------------------------
+//Places
+//----------------------------------------------------------------------------------------
+.placesDirec{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: $colorblue;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+//----------------------------------------------------------------------------------------
+//Media Queries
+//----------------------------------------------------------------------------------------
 @media (min-width:768px){
 
     .autosNuevos,.autosUsados,.nuevosIngresos{
