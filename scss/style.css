@@ -338,6 +338,60 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .nuestrasSedes {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    height: 600px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+        grid-template-areas: "map sede1" "map sede2" "map sede3" "map sede4" "map sede5";
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .sede1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: sede1;
+  }
+  .sede2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: sede2;
+  }
+  .sede3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: sede3;
+  }
+  .sede4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: sede4;
+  }
+  .sede5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: sede5;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -360,6 +414,60 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .nuestrasSedes {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    height: 600px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+        grid-template-areas: "map sede1" "map sede2" "map sede3" "map sede4" "map sede5";
+  }
+  .map {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    grid-area: map;
+    width: 100%;
+  }
+  .sede1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: sede1;
+  }
+  .sede2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: sede2;
+  }
+  .sede3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: sede3;
+  }
+  .sede4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: sede4;
+  }
+  .sede5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: sede5;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -267,6 +267,35 @@ p{
         align-items: center;
         justify-content: space-between;
     }
+    .map{
+        grid-area: map;
+        width: 100%;
+    }
+    .nuestrasSedes{
+        align-items: center;
+        width: 70%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows:repeat(5,1fr);
+        gap: 10px;
+        grid-template-areas: 
+        "map sede1"
+        "map sede2"
+        "map sede3"
+        "map sede4"
+        "map sede5";
+    }
+    .map{
+        grid-area: map;
+        width: 100%;
+    }
+    @for $i from 1 through 5{
+
+        .sede#{($i)}{
+            grid-area:sede#{($i)};
+        }
+    }
 }
 //Tablets
 @media (min-width: 768px) and (max-width: 1200px) { 
@@ -283,5 +312,34 @@ p{
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+    }
+    .map{
+        grid-area: map;
+        width: 100%;
+    }
+    .nuestrasSedes{
+        align-items: center;
+        width: 70%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows:repeat(5,1fr);
+        gap: 10px;
+        grid-template-areas: 
+        "map sede1"
+        "map sede2"
+        "map sede3"
+        "map sede4"
+        "map sede5";
+    }
+    .map{
+        grid-area: map;
+        width: 100%;
+    }
+    @for $i from 1 through 5{
+
+        .sede#{($i)}{
+            grid-area:sede#{($i)};
+        }
     }
 }
